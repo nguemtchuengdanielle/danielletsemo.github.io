@@ -58,22 +58,22 @@ document.addEventListener('visibilitychange', function () {
 // Typed.js effect
 var typed = new Typed(".typing-text", {
   strings: [
-    "Data Science ^1000",
-    "Machine Learning ^1000",
-    "Deep Learning ^1000",
-    "NLP & Computer Vision ^1000",
-    "AI Research ^1000",
-    "Flood Prediction ^1000"
+    "Data Science",
+    "Machine Learning",
+    "Deep Learning",
+    "NLP &amp; Computer Vision",
+    "AI Research",
+    "Flood Prediction with LSTM"
   ],
   loop: true,
   typeSpeed: 80,
   backSpeed: 50,
-  backDelay: 800,
-  startDelay: 500,
+  backDelay: 1200,
+  startDelay: 300,
   showCursor: true,
   cursorChar: '|',
   smartBackspace: false,
-  autoInsertCss: true,
+  loopCount: Infinity,
 });
 
 // ─── Danielle's Skills ───────────────────────────

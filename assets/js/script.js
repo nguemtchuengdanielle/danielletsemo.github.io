@@ -195,18 +195,6 @@ srtop.reveal('.contact .container .form-group', { delay: 400 });
 srtop.reveal('.cert-slider-wrapper', { delay: 300 });
 srtop.reveal('.cert-dots', { delay: 500 });
 
-// Start of Tawk.to Live Chat
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-(function () {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/69f7714d0b9cc71c3209418e/1jnn956cp';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-})();
-// End of Tawk.to Live Chat
-
 // ─── Generic Slider Factory ───────────────────────────
 function makeSlider(sliderSel, prevSel, nextSel, dotsSel, interval) {
   var slider = document.querySelector(sliderSel);
@@ -253,9 +241,36 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
 (function () {
     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
-    s1.src = 'https://embed.tawk.to/69f7714d0b9cc71c3209418e/1jnn956cp';
+    s1.src = 'https://embed.tawk.to/69f7ae3552b26a1c3925b1ec/1jnno10pc';
     s1.charset = 'UTF-8';
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
 })();
 // End of Tawk.to Live Chat
+
+// Language switcher
+var translations = {
+  en: {
+    home: "Home", about: "About", skills: "Skills",
+    education: "Education", experience: "Experience",
+    projects: "Projects", contact: "Contact",
+    heroText: "I'm Danielle", heroSub: "I am into",
+    aboutMe: "About Me", resume: "Resume"
+  },
+  fr: {
+    home: "Accueil", about: "À propos", skills: "Compétences",
+    education: "Formation", experience: "Expérience",
+    projects: "Projets", contact: "Contact",
+    heroText: "Je suis Danielle", heroSub: "Je travaille en",
+    aboutMe: "À propos", resume: "CV"
+  }
+};
+
+function setLang(lang) {
+  document.querySelectorAll('.lang-btn').forEach(function(btn) {
+    btn.classList.remove('active');
+  });
+  event.target.classList.add('active');
+  // Store preference
+  localStorage.setItem('lang', lang);
+}

@@ -1028,3 +1028,88 @@ form .button-area { display: flex; float: right; flex-direction: row-reverse; }
 
 /* ── Typed text visible ── */
 .typing-text { color: #0318a9 !important; }
+
+/* ── CONTACT JIGAR STYLE ── */
+.contact { background: #e5ecfb; min-height: 60vh; }
+.contact .container {
+  max-width: 1050px; width: 100%; background: #fff;
+  border-radius: 1.5rem; margin: 2rem auto;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.contact .container .content {
+  display: flex; align-items: center;
+  justify-content: space-between; padding: 2.5rem 2rem;
+}
+.contact .content .image-box { max-width: 50%; margin-left: 2rem; }
+.contact .content .image-box img { width: 100%; }
+.contact .content form { width: 45%; margin-right: 3.5rem; }
+.contact .content .form-group { display: flex; flex-direction: column; }
+.contact .content .field {
+  height: 50px; display: flex;
+  position: relative; margin: 0.8rem;
+}
+.contact .content form i {
+  position: absolute; top: 50%; left: 18px;
+  color: #555; font-size: 17px;
+  pointer-events: none; transform: translateY(-50%);
+}
+.contact .content .field input,
+.contact .content .message textarea {
+  width: 100%; height: 100%; outline: none;
+  padding: 0 16px 0 48px; font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px; border: 1px solid #ccc;
+  background: #e5ecfb;
+}
+.contact .content .field input:focus,
+.contact .content .message textarea:focus {
+  border: 2px solid #730397; padding-left: 47px;
+}
+.contact .content .message { position: relative; margin: 0.8rem; }
+.contact .content .message i { top: 25px; font-size: 20px; left: 15px; }
+.contact .content .message textarea {
+  min-height: 130px; max-width: 100%; min-width: 100%;
+  padding: 12px 20px 0 48px;
+}
+.contact .button-area {
+  display: flex; justify-content: flex-end; margin: 0.5rem 0.8rem;
+}
+.contact .button-area button {
+  color: #fff; border: none; outline: none;
+  font-size: 1.6rem; cursor: pointer;
+  border-radius: 5px; padding: 12px 25px;
+  background: #730397;
+  box-shadow: 0 4px 10px rgba(115,3,151,0.4);
+  font-family: "Nunito", sans-serif; transition: 0.3s;
+}
+.contact .button-area button:hover { background: #5a0078; }
+@media (max-width: 768px) {
+  .contact .content { flex-direction: column; padding: 1.5rem; }
+  .contact .content .image-box { display: none; }
+  .contact .content form { width: 100%; margin: 0; }
+}
+
+/* ── FOOTER MINI ── */
+.footer { min-height: auto; padding: 2.5rem 9% 0; background: rgb(0,1,43); }
+.footer-mini {
+  display: flex; flex-wrap: wrap;
+  align-items: center; justify-content: space-between;
+  padding-bottom: 2rem; gap: 2rem;
+  border-bottom: 0.5px solid rgba(255,255,255,0.1);
+}
+.footer-mini-brand { flex: 1 1 25rem; }
+.footer-mini-brand i { color: #730397; font-size: 2rem; margin-right: 0.5rem; }
+.footer-mini-brand span { color: #fff; font-size: 1.8rem; font-weight: 700; }
+.footer-mini-brand p { color: #aaa; font-size: 1.3rem; text-transform: none; margin-top: 0.4rem; }
+.footer-mini-links { display: flex; gap: 2rem; flex-wrap: wrap; }
+.footer-mini-links a { color: #bbb; font-size: 1.4rem; transition: 0.2s; }
+.footer-mini-links a:hover { color: #730397; }
+.footer-mini-social { display: flex; gap: 1.2rem; }
+.footer-mini-social a {
+  width: 3.8rem; height: 3.8rem;
+  background: rgba(255,255,255,0.1);
+  color: #fff; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem; transition: 0.2s;
+}
+.footer-mini-social a:hover { background: #730397; }

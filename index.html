@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Danielle Tsemo, portfolio, data scientist, AI researcher, machine learning, AIMS Senegal" />
+  <meta name="description" content="Welcome to Danielle Tsemo's Portfolio. Data Scientist & AI Researcher" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicon -->
+  <link id='favicon' rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230e2431'/><text x='50' y='72' font-size='65' font-family='Poppins,sans-serif' font-weight='800' fill='white' text-anchor='middle'>D</text></svg>" type="image/svg+xml">
+  <title>Portfolio | Danielle Tsemo</title>
+</head>
+<body>
+
+<!-- pre loader -->
+<div class="loader-container" id="loader">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div>
+
+<!-- navbar starts -->
+<header>
+  <a href="/" class="logo"><i class="fas fa-brain" style="color:#5a0ea0;"></i> <span style="color:#0e2431;">Danielle</span></a>
+  <div id="menu" class="fas fa-bars"></div>
+  <nav class="navbar">
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- navbar ends -->
+
+
+<!-- hero section starts -->
+<section class="home" id="home">
+  <div id="particles-js"></div>
+
+  <div class="content">
+    <h2>Hi There,<br/> I'm Danielle <span>Tsemo</span></h2>
+    <p>I am into <span class="typing-text" style="color:#fff;"></span></p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+      <ul class="social-icons">
+        <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/danielle-tsemo" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="github" aria-label="GitHub" href="https://github.com/danielletsemo" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a class="email" aria-label="Email" href="mailto:nguemtchueng.t.danielle@aims-senegal.org"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/profile.jpg" alt="Danielle Tsemo" onerror="this.src='./assets/images/aims.jpg'">
+  </div>
+</section>
+<!-- hero section ends -->
+
+
+<!-- about section starts -->
+<section class="about" id="about">
+  <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
+  <div class="row">
+    <div class="image">
+      <img draggable="false" class="tilt" src="./assets/images/aims.jpg" alt="Danielle Tsemo">
+    </div>
+    <div class="content">
+      <h3>I'm Danielle</h3>
+      <span class="tag">Data Scientist & AI Researcher</span>
+
+      <p>I am <strong>Nguemtchueng Tsemo Bibiane Danielle</strong>, a passionate Data Scientist and AI Researcher
+        currently pursuing a Master's in Mathematical Sciences (Big Data) at AIMS Senegal, Mbour.
+        My research spans flood forecasting with LSTM models, NLP for African languages, computer vision,
+        and generative AI. I am a strong advocate for women in STEM across Africa, winner of the
+        JCIA Hackathon 2025, and a recognized speaker at Deep Learning Indaba.</p>
+
+      <div class="box-container">
+        <div class="box">
+          <p><span>Email: </span>nguemtchueng.t.danielle@aims-senegal.org</p>
+          <p><span>Location: </span>Mbour, Senegal · Yaounde, Cameroon</p>
+          <p><span>Nationality: </span>Cameroonian 🇨🇲</p>
+          <p><span>Languages: </span>French (native), English</p>
+        </div>
+      </div>
+
+      <div class="resumebtn">
+        <a href="#" class="btn"><span>Resume</span>
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about section ends -->
+
+
+<!-- skills section starts -->
+<section class="skills" id="skills">
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+  <div class="container">
+    <div class="row" id="skillsContainer"></div>
+  </div>
+</section>
+<!-- skills section ends -->
+
+
+<!-- education section starts -->
+<section class="education" id="education">
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+  <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+  <div class="box-container">
+
+    <div class="box">
+      <div class="image">
+        <img draggable="false" src="./assets/images/aims.jpg" alt="AIMS Senegal">
+      </div>
+      <div class="content">
+        <h3>Master's in Mathematical Sciences – Big Data</h3>
+        <p>African Institute for Mathematical Sciences (AIMS) Senegal | Mbour, Senegal</p>
+        <h4>In Progress · 2024–2025</h4>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img draggable="false" src="./assets/images/uy1.jpg" alt="University of Yaounde 1">
+      </div>
+      <div class="content">
+        <h3>Master's in Computer Science – Data Science</h3>
+        <p>University of Yaounde 1 | Yaounde, Cameroon</p>
+        <h4>Completed · September 2025</h4>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img draggable="false" src="./assets/images/uy1.jpg" alt="University of Yaounde 1">
+      </div>
+      <div class="content">
+        <h3>Bachelor of Science – Computer Science, Data Science</h3>
+        <p>University of Yaounde 1 | Yaounde, Cameroon</p>
+        <h4>Completed · July 2023</h4>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img draggable="false" src="./assets/images/techwomen.jpg" alt="TechWomen Factory">
+      </div>
+      <div class="content">
+        <h3>Data Scientist Training – CAYSTI Scholarship</h3>
+        <p>TechWomen Factory – CAYSTI | Yaounde, Cameroon</p>
+        <h4>April 2022 – June 2023 | 🏆 Best Student in Data Science</h4>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- education section ends -->
+
+
+<!-- experience section starts -->
+<section class="experience" id="experience">
+  <h2 class="heading"><i class="fas fa-briefcase"></i> Work <span>Experience</span></h2>
+
+  <div class="timeline">
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>HYDROAS PROJECT · Remote</h2>
+        </div>
+        <div class="desc">
+          <h3>Researcher Internship</h3>
+          <p>Nov 2023 – 2025</p>
+          <ul class="bullets">
+            <li>LSTM-based flood forecasting model for Ouémé basin, Benin</li>
+            <li>Processed 30+ years of hydrometeorological data</li>
+            <li>Delivered 7-day real-time flood prediction pipeline</li>
+            <li>Presented results at AfriClimate AI, Deep Learning Indaba 2024</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>ENIX SARL · Yaounde, Cameroon</h2>
+        </div>
+        <div class="desc">
+          <h3>Data Scientist Internship</h3>
+          <p>December 2022 – 2023</p>
+          <ul class="bullets">
+            <li>ML models for cyber threat detection &amp; risk assessment</li>
+            <li>Dashboards and visualizations using Splunk</li>
+            <li>Data preprocessing, feature engineering, data transformation</li>
+            <li>Cross-functional collaboration on security data solutions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>TechWomen Factory – CAYSTI</h2>
+        </div>
+        <div class="desc">
+          <h3>Data Scientist Training | CAYSTI Scholarship</h3>
+          <p>April 2022 – June 2023</p>
+          <ul class="bullets">
+            <li>Intensive Data Science training funded by Global Affairs Canada</li>
+            <li>Python, Machine Learning, Data Visualization, SQL</li>
+            <li>Awarded Best Student in Data Science 🏆</li>
+            <li>Capstone project: predictive analytics on real datasets</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="morebtn">
+    <a href="#projects" class="btn"><span>View Projects</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+
+</section>
+<!-- experience section ends -->
+
+
+<!-- awards section starts -->
+<section class="awards" id="awards">
+  <h2 class="heading"><i class="fas fa-trophy"></i> Honors & <span>Awards</span></h2>
+
+  <div class="awards-box-container">
+
+    <div class="awards-box tilt">
+      <i class="fas fa-trophy"></i>
+      <h3>1st Place – JCIA Hackathon 2025</h3>
+      <p>Developed <strong>SafouCheck</strong>, an AI-based solution for African plum classification and disease/quality detection using the African Plums Dataset.</p>
+    </div>
+
+    <div class="awards-box tilt">
+      <i class="fas fa-microphone-alt"></i>
+      <h3>1st Place – Lightning Talk · Deep Learning Indaba 2024</h3>
+      <p>Awarded first place for lightning talk at the AfriClimate AI Workshop, Deep Learning Indaba, Senegal 2024.</p>
+    </div>
+
+    <div class="awards-box tilt">
+      <i class="fas fa-star"></i>
+      <h3>Best Student in Data Science – TechWomen Factory 2023</h3>
+      <p>Recognized as the Best Student in Data Science under the CAYSTI & CUSO International program funded by Global Affairs Canada.</p>
+    </div>
+
+  </div>
+</section>
+<!-- awards section ends -->
+
+
+<!-- conferences section starts -->
+<section class="conferences" id="conferences">
+  <h2 class="heading"><i class="fas fa-certificate"></i> Conferences & <span>Certifications</span></h2>
+
+  <div class="cert-slider-wrapper">
+    <button class="cert-arrow cert-prev conf-prev"><i class="fas fa-chevron-left"></i></button>
+    <div class="cert-slider conf-slider">
+
+      <div class="cert-slide active">
+        <div class="cert-card conf-card">
+          <div class="cert-deco deco1"></div>
+          <div class="cert-deco deco2"></div>
+          <div class="cert-seal"><i class="fas fa-globe"></i></div>
+          <div class="cert-body">
+            <p class="cert-intro">2024 · Vancouver, Canada (Online)</p>
+            <h2 class="cert-name">Women in Machine Learning Workshop</h2>
+            <p class="cert-desc">Attended workshops on generative networks and NLP.</p>
+            <h3 class="cert-course">WiML Workshop</h3>
+            <p class="cert-org">Abstract Reviewer · NeurIPS 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-slide">
+        <div class="cert-card conf-card">
+          <div class="cert-deco deco1"></div>
+          <div class="cert-deco deco2"></div>
+          <div class="cert-seal"><i class="fas fa-users"></i></div>
+          <div class="cert-body">
+            <p class="cert-intro">2024 · Kigali, Rwanda</p>
+            <h2 class="cert-name">ACWES Conference</h2>
+            <p class="cert-desc">Poster presentation on Hybrid Model for Predicting and Forecasting Floods.</p>
+            <h3 class="cert-course">African Conf. of Women Engineers & Scientists</h3>
+            <p class="cert-org">Kigali, Rwanda · 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-slide">
+        <div class="cert-card conf-card">
+          <div class="cert-deco deco1"></div>
+          <div class="cert-deco deco2"></div>
+          <div class="cert-seal"><i class="fas fa-brain"></i></div>
+          <div class="cert-body">
+            <p class="cert-intro">2024 · Senegal</p>
+            <h2 class="cert-name">Deep Learning Indaba</h2>
+            <p class="cert-desc">Oral presentation on flood prediction at AfriClimate AI commission. 🏆 1st Place Lightning Talk.</p>
+            <h3 class="cert-course">AfriClimate AI Workshop</h3>
+            <p class="cert-org">Deep Learning Indaba · Senegal 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-slide">
+        <div class="cert-card conf-card">
+          <div class="cert-deco deco1"></div>
+          <div class="cert-deco deco2"></div>
+          <div class="cert-seal"><i class="fas fa-laptop-code"></i></div>
+          <div class="cert-body">
+            <p class="cert-intro">2023 · Cameroon</p>
+            <h2 class="cert-name">Digital Week Representative</h2>
+            <p class="cert-desc">Represented University of Yaounde 1 showcasing data analytics research.</p>
+            <h3 class="cert-course">National Digital Week</h3>
+            <p class="cert-org">University of Yaounde 1 · 2023</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-slide">
+        <div class="cert-card conf-card">
+          <div class="cert-deco deco1"></div>
+          <div class="cert-deco deco2"></div>
+          <div class="cert-seal"><i class="fas fa-database"></i></div>
+          <div class="cert-body">
+            <p class="cert-intro">MasterCard Foundation · Force N Program</p>
+            <h2 class="cert-name">Data Processing Level 1</h2>
+            <p class="cert-desc">Data visualization, cleaning, transformation and analysis.</p>
+            <h3 class="cert-course">Certification</h3>
+            <p class="cert-org">Global Affairs Canada</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="cert-arrow cert-next conf-next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <div class="cert-dots conf-dots">
+    <span class="cert-dot active" data-index="0"></span>
+    <span class="cert-dot" data-index="1"></span>
+    <span class="cert-dot" data-index="2"></span>
+    <span class="cert-dot" data-index="3"></span>
+    <span class="cert-dot" data-index="4"></span>
+  </div>
+</section>
+<!-- conferences section ends -->
+
+
+<!-- projects section starts -->
+<section class="work" id="projects">
+  <h2 class="heading"><i class="fas fa-project-diagram"></i> Research <span>Projects</span></h2>
+
+  <div class="jigar-projects">
+
+    <div class="jp-card">
+      <div class="jp-img-wrap">
+        <img src="./assets/images/aims.jpg" alt="Flood Prediction">
+        <div class="jp-overlay">
+          <a href="#" title="View"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://github.com/danielletsemo" target="_blank" title="Code"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="jp-info">
+        <h3>Flood Prediction – HYDROAS</h3>
+        <p><span>Tech Stack:</span> Python, LSTM, TensorFlow, Pandas, Matplotlib</p>
+      </div>
+    </div>
+
+    <div class="jp-card">
+      <div class="jp-img-wrap">
+        <img src="./assets/images/uy1.jpg" alt="Malaria Prediction">
+        <div class="jp-overlay">
+          <a href="#" title="View"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://github.com/danielletsemo" target="_blank" title="Code"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="jp-info">
+        <h3>Malaria Spread Prediction</h3>
+        <p><span>Tech Stack:</span> Python, PDEs, Neural Networks, Scikit-learn, NumPy</p>
+      </div>
+    </div>
+
+    <div class="jp-card">
+      <div class="jp-img-wrap">
+        <img src="./assets/images/techwomen.jpg" alt="NLP Next Word">
+        <div class="jp-overlay">
+          <a href="#" title="View"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://github.com/danielletsemo" target="_blank" title="Code"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="jp-info">
+        <h3>Next Word Prediction</h3>
+        <p><span>Tech Stack:</span> Python, RNN, LSTM, Transformers, PyTorch</p>
+      </div>
+    </div>
+
+    <div class="jp-card">
+      <div class="jp-img-wrap">
+        <img src="./assets/images/aims.jpg" alt="Handwriting Recognition">
+        <div class="jp-overlay">
+          <a href="#" title="View"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://github.com/danielletsemo" target="_blank" title="Code"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="jp-info">
+        <h3>Handwritten Character Recognition</h3>
+        <p><span>Tech Stack:</span> Python, SIFT, KNN, OpenCV, Scikit-learn</p>
+      </div>
+    </div>
+
+    <div class="jp-card">
+      <div class="jp-img-wrap">
+        <img src="./assets/images/uy1.jpg" alt="Music App">
+        <div class="jp-overlay">
+          <a href="#" title="View"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://github.com/danielletsemo" target="_blank" title="Code"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="jp-info">
+        <h3>Music Streaming + Recommendation</h3>
+        <p><span>Tech Stack:</span> Python, Flask, JavaScript, ML, Collaborative Filtering</p>
+      </div>
+    </div>
+
+    <div class="jp-card">
+      <div class="jp-img-wrap">
+        <img src="./assets/images/techwomen.jpg" alt="NLP Translation">
+        <div class="jp-overlay">
+          <a href="#" title="View"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://github.com/danielletsemo" target="_blank" title="Code"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="jp-info">
+        <h3>Video Auto-Translation (Cameroonian Languages)</h3>
+        <p><span>Tech Stack:</span> Python, NLP, Speech Recognition, Translation APIs</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- projects section ends -->
+
+
+<!-- certifications section starts -->
+<section class="certifications" id="certifications">
+  <h2 class="heading"><i class="fas fa-certificate"></i> My <span>Certifications</span></h2>
+
+  <div class="cert-slider-wrapper">
+    <button class="cert-arrow cert-prev"><i class="fas fa-chevron-left"></i></button>
+    <div class="cert-slider">
+
+      <div class="cert-slide active">
+        <div class="cert-card">
+          <div class="cert-deco deco1"></div>
+          <div class="cert-deco deco2"></div>
+          <div class="cert-seal"><i class="fas fa-medal"></i></div>
+          <div class="cert-body">
+            <p class="cert-intro">This is to certify that</p>
+            <h2 class="cert-name">Nguemtchueng Tsemo Bibiane Danielle</h2>
+            <p class="cert-desc">has successfully completed the course by demonstrating<br>theoretical and practical understanding of</p>
+            <h3 class="cert-course">Data Processing – Level 1</h3>
+            <p class="cert-org">Force N Program · MasterCard Foundation</p>
+          </div>
+          <div class="cert-sig"><i class="fas fa-signature"></i></div>
+        </div>
+      </div>
+
+      <div class="cert-slide">
+        <div class="cert-card">
+          <div class="cert-deco deco1"></div>
+          <div class="cert-deco deco2"></div>
+          <div class="cert-seal"><i class="fas fa-medal"></i></div>
+          <div class="cert-body">
+            <p class="cert-intro">This is to certify that</p>
+            <h2 class="cert-name">Nguemtchueng Tsemo Bibiane Danielle</h2>
+            <p class="cert-desc">has successfully completed the training and was awarded</p>
+            <h3 class="cert-course">Best Student in Data Science</h3>
+            <p class="cert-org">TechWomen Factory – CAYSTI · 2023</p>
+          </div>
+          <div class="cert-sig"><i class="fas fa-signature"></i></div>
+        </div>
+      </div>
+
+      <div class="cert-slide">
+        <div class="cert-card">
+          <div class="cert-deco deco1"></div>
+          <div class="cert-deco deco2"></div>
+          <div class="cert-seal"><i class="fas fa-medal"></i></div>
+          <div class="cert-body">
+            <p class="cert-intro">This is to certify that</p>
+            <h2 class="cert-name">Nguemtchueng Tsemo Bibiane Danielle</h2>
+            <p class="cert-desc">has demonstrated excellence as</p>
+            <h3 class="cert-course">Abstract Reviewer – WiML Workshop</h3>
+            <p class="cert-org">Women in Machine Learning · 2024</p>
+          </div>
+          <div class="cert-sig"><i class="fas fa-signature"></i></div>
+        </div>
+      </div>
+
+      <div class="cert-slide">
+        <div class="cert-card">
+          <div class="cert-deco deco1"></div>
+          <div class="cert-deco deco2"></div>
+          <div class="cert-seal"><i class="fas fa-medal"></i></div>
+          <div class="cert-body">
+            <p class="cert-intro">This is to certify that</p>
+            <h2 class="cert-name">Nguemtchueng Tsemo Bibiane Danielle</h2>
+            <p class="cert-desc">has successfully completed the Master's program in</p>
+            <h3 class="cert-course">Mathematical Sciences – Big Data</h3>
+            <p class="cert-org">AIMS Senegal · 2024–2025</p>
+          </div>
+          <div class="cert-sig"><i class="fas fa-signature"></i></div>
+        </div>
+      </div>
+
+    </div>
+    <button class="cert-arrow cert-next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <div class="cert-dots">
+    <span class="cert-dot active" data-index="0"></span>
+    <span class="cert-dot" data-index="1"></span>
+    <span class="cert-dot" data-index="2"></span>
+    <span class="cert-dot" data-index="3"></span>
+  </div>
+</section>
+<!-- certifications section ends -->
+
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  <h2 class="heading"><i class="fas fa-envelope"></i> Contact <span>Me</span></h2>
+
+  <div class="contact-wrapper">
+
+    <!-- LEFT: info -->
+    <div class="contact-info">
+      <div class="contact-info-item">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div>
+          <h4>Email</h4>
+          <p>nguemtchueng.t.danielle@aims-senegal.org</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div>
+          <h4>Location</h4>
+          <p>Mbour, Senegal · Yaounde, Cameroon</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+        <div>
+          <h4>LinkedIn</h4>
+          <p>linkedin.com/in/danielle-tsemo</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon"><i class="fab fa-github"></i></div>
+        <div>
+          <h4>GitHub</h4>
+          <p>github.com/danielletsemo</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: form -->
+    <div class="contact-form-box">
+      <form id="contact-form">
+        <div class="cf-field">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="cf-field">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="cf-field">
+          <input type="text" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="cf-field">
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+<!-- contact section ends -->
+
+
+<!-- footer section starts -->
+<section class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <i class="fas fa-brain" style="color:#a855f7; font-size:2.5rem;"></i>
+      <h3>Danielle Tsemo</h3>
+      <p>Data Scientist & AI Researcher · Mbour, Senegal</p>
+      <div class="share">
+        <a href="https://www.linkedin.com/in/danielle-tsemo" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+        <a href="https://github.com/danielletsemo" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+        <a href="mailto:nguemtchueng.t.danielle@aims-senegal.org" class="fas fa-envelope" aria-label="Mail"></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <a href="#home"><i class="fas fa-chevron-circle-right"></i> Home</a>
+      <a href="#about"><i class="fas fa-chevron-circle-right"></i> About</a>
+      <a href="#skills"><i class="fas fa-chevron-circle-right"></i> Skills</a>
+      <a href="#education"><i class="fas fa-chevron-circle-right"></i> Education</a>
+      <a href="#experience"><i class="fas fa-chevron-circle-right"></i> Experience</a>
+      <a href="#awards"><i class="fas fa-chevron-circle-right"></i> Awards</a>
+      <a href="#projects"><i class="fas fa-chevron-circle-right"></i> Projects</a>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Info</h3>
+      <p><i class="fas fa-envelope"></i> nguemtchueng.t.danielle@aims-senegal.org</p>
+      <p><i class="fas fa-map-marked-alt"></i> Mbour, Senegal · Yaounde, Cameroon</p>
+    </div>
+  </div>
+
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://github.com/danielletsemo">Danielle Tsemo</a></h1>
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+
+
+<!-- CDNs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>

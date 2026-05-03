@@ -1145,3 +1145,33 @@ form .button-area { display: flex; float: right; flex-direction: row-reverse; }
 
 /* ── Contact background white ── */
 .contact { background: #f7f7f7 !important; }
+
+/* ── Globe language switcher ── */
+.lang-globe {
+  background: none; border: 1.5px solid #2563eb;
+  border-radius: 2rem; cursor: pointer;
+  font-size: 1.4rem; font-weight: 700;
+  color: #2563eb; font-family: "Poppins", sans-serif;
+  padding: 0.3rem 1.2rem;
+  display: flex; align-items: center; gap: 0.4rem;
+  transition: 0.2s; margin-left: 2rem;
+}
+.lang-globe:hover { background: #2563eb; color: #fff; }
+
+/* ── Award badge in project cards ── */
+.jp-badge {
+  display: inline-block;
+  background: #2563eb; color: #fff;
+  font-size: 1.1rem; font-weight: 600;
+  padding: 0.3rem 1rem; border-radius: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+/* ── Submit button blue ── */
+.button-area button,
+.contact .button-area button {
+  background: #2563eb !important;
+  box-shadow: 0 4px 10px rgba(37,99,235,0.4) !important;
+}
+.button-area button:hover,
+.contact .button-area button:hover { background: #1d4ed8 !important; }

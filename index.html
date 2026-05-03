@@ -46,7 +46,7 @@
   <div id="particles-js"></div>
 
   <div class="content">
-    <h2>Hi, <br/>I'm Danielle <span>Tsemo</span></h2>
+    <h2>Hi, I'm Danielle <span>Tsemo</span></h2>
     <p>I am into <span class="typing-text"></span></p>
     <a href="#about" class="btn"><span>About Me</span>
       <i class="fas fa-arrow-circle-down"></i>
@@ -62,10 +62,7 @@
 
   <div class="image hero-img-wrap">
     <img draggable="false" class="tilt" src="./assets/images/profile.jpg" alt="Danielle Tsemo" onerror="this.src='./assets/images/aims.jpg'">
-    <div class="float-icon fi-1"><img src="https://img.icons8.com/color/48/python--v1.png" alt="Python"></div>
-    <div class="float-icon fi-2"><img src="https://img.icons8.com/color/48/tensorflow.png" alt="TensorFlow"></div>
-    <div class="float-icon fi-3"><img src="https://img.icons8.com/color/48/pandas.png" alt="Pandas"></div>
-    <div class="float-icon fi-4"><img src="https://img.icons8.com/color/48/pytorch.png" alt="PyTorch"></div>
+
   </div>
 </section>
 <!-- hero section ends -->
@@ -134,7 +131,7 @@
       <div class="content">
         <h3>Master's in Mathematical Sciences – Big Data</h3>
         <p>African Institute for Mathematical Sciences (AIMS) Senegal | Mbour, Senegal</p>
-        <h4>In Progress · 2024–2025</h4>
+        <h4 class="in-progress">In Progress · 2024–2025</h4>
       </div>
     </div>
 
@@ -372,7 +369,7 @@
     <span class="cert-dot" data-index="4"></span>
   </div>
   <div class="view-all-wrap">
-    <a href="#contact" class="view-all-btn">Get In Touch <i class="fas fa-arrow-right"></i></a>
+    <a href="#contact" class="view-all-btn">View All <i class="fas fa-arrow-right"></i></a>
   </div>
 </section>
 <!-- conferences section ends -->
@@ -482,35 +479,61 @@
 <section class="contact" id="contact">
   <h2 class="heading"><i class="fas fa-headset"></i> Get In <span>Touch</span></h2>
 
-  <div class="container">
-    <div class="content">
-      <div class="image-box">
-        <img draggable="false" src="./assets/images/contact1.png" alt="contact">
+  <div class="contact-wrapper">
+
+    <!-- LEFT: info -->
+    <div class="contact-info">
+      <div class="contact-info-item">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div>
+          <h4>Email</h4>
+          <p><a href="mailto:nguemtchueng.t.danielle@aims-senegal.org" class="contact-link">Click to send email</a></p>
+        </div>
       </div>
+      <div class="contact-info-item">
+        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div>
+          <h4>Location</h4>
+          <p>Mbour, Senegal · Yaounde, Cameroon</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+        <div>
+          <h4>LinkedIn</h4>
+          <p><a href="https://linkedin.com/in/danielle-tsemo" target="_blank" class="contact-link">linkedin.com/in/danielle-tsemo</a></p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon"><i class="fab fa-github"></i></div>
+        <div>
+          <h4>GitHub</h4>
+          <p><a href="https://github.com/danielletsemo" target="_blank" class="contact-link">github.com/danielletsemo</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: form -->
+    <div class="contact-form-box">
       <form id="contact-form">
-        <div class="form-group">
-          <div class="field">
-            <input type="text" name="name" placeholder="Name" required>
-            <i class="fas fa-user"></i>
-          </div>
-          <div class="field">
-            <input type="email" name="email" placeholder="Email" required>
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div class="field">
-            <input type="text" name="phone" placeholder="Phone">
-            <i class="fas fa-phone-alt"></i>
-          </div>
-          <div class="message">
-            <textarea placeholder="Message" name="message" required></textarea>
-            <i class="fas fa-comment-dots"></i>
-          </div>
+        <div class="cf-field">
+          <input type="text" name="name" placeholder="Your Name" required>
         </div>
-        <div class="button-area">
-          <button type="submit">Submit <i class="fa fa-paper-plane"></i></button>
+        <div class="cf-field">
+          <input type="email" name="email" placeholder="Your Email" required>
         </div>
+        <div class="cf-field">
+          <input type="text" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="cf-field">
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
       </form>
     </div>
+
   </div>
 </section>
 <!-- contact section ends -->
@@ -518,28 +541,34 @@
 
 <!-- footer section starts -->
 <section class="footer">
-  <div class="footer-mini">
-    <div class="footer-mini-left">
-      <i class="fas fa-code"></i> <span>Danielle Tsemo</span>
-      <p>Data Scientist &amp; AI Researcher · Mbour, Senegal</p>
+  <div class="footer-simple">
+    <div class="footer-left">
+      <i class="fas fa-code footer-logo-icon"></i>
+      <h3>Danielle Tsemo</h3>
+      <p>Data Scientist &amp; AI Researcher</p>
+      <p><i class="fas fa-map-marker-alt"></i> Mbour, Senegal</p>
     </div>
-    <div class="footer-mini-links">
+    <div class="footer-nav">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
-    <div class="footer-mini-social">
-      <a href="https://www.linkedin.com/in/danielle-tsemo" class="fab fa-linkedin" target="_blank"></a>
-      <a href="https://github.com/danielletsemo" class="fab fa-github" target="_blank"></a>
-      <a href="mailto:nguemtchueng.t.danielle@aims-senegal.org" class="fas fa-envelope"></a>
+    <div class="footer-social">
+      <h3>Connect</h3>
+      <div class="share">
+        <a href="https://www.linkedin.com/in/danielle-tsemo" class="fab fa-linkedin" target="_blank"></a>
+        <a href="https://github.com/danielletsemo" class="fab fa-github" target="_blank"></a>
+        <a href="mailto:nguemtchueng.t.danielle@aims-senegal.org" class="fas fa-envelope"></a>
+      </div>
     </div>
   </div>
+
   <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://github.com/danielletsemo">Danielle Tsemo</a></h1>
 </section>
 <!-- footer section ends -->
-
 
 
 <!-- scroll top btn -->

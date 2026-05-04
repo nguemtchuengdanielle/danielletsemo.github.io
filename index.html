@@ -6,11 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="Danielle Tsemo, portfolio, data scientist, AI researcher, machine learning, AIMS Senegal" />
   <meta name="description" content="Welcome to Danielle Tsemo's Portfolio. Data Scientist & AI Researcher" />
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Favicon -->
   <link id='favicon' rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230e2431'/><text x='50' y='72' font-size='65' font-family='Poppins,sans-serif' font-weight='800' fill='white' text-anchor='middle'>D</text></svg>" type="image/svg+xml">
   <title>Portfolio | Danielle Tsemo</title>
 </head>
@@ -34,19 +31,19 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li class="lang-li">
-        <button class="lang-globe" id="langBtn" onclick="toggleLang()" title="Français / English">🌍</button>
-      </li>
     </ul>
-</nav>
+    <div class="lang-switcher">
+      <button class="lang-globe" id="langBtn" onclick="toggleLang()" title="Français / English">
+        🌍 <span id="langLabel">EN</span>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- navbar ends -->
-
 
 <!-- hero section starts -->
 <section class="home" id="home">
   <div id="particles-js"></div>
-
   <div class="content">
     <h2>Hi, I'm Danielle <span>Tsemo</span></h2>
     <p>I am into <span class="typing-text"></span></p>
@@ -58,38 +55,30 @@
         <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/danielle-tsemo" target="_blank"><i class="fab fa-linkedin"></i></a></li>
         <li><a class="github" aria-label="GitHub" href="https://github.com/danielletsemo" target="_blank"><i class="fab fa-github"></i></a></li>
         <li><a class="email" aria-label="Email" href="mailto:nguemtchueng.t.danielle@aims-senegal.org"><i class="fas fa-envelope"></i></a></li>
-        <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/danielletsemo" target="_blank"><i class="fab fa-twitter"></i></a></li>
-        <li><a class="telegram" aria-label="Telegram" href="https://t.me/danielletsemo" target="_blank"><i class="fab fa-telegram"></i></a></li>
       </ul>
     </div>
   </div>
-
   <div class="image hero-img-wrap">
     <img draggable="false" class="tilt" src="./assets/images/profile.jpg" alt="Danielle Tsemo" onerror="this.src='./assets/images/aims.jpg'">
-
   </div>
 </section>
 <!-- hero section ends -->
 
-
 <!-- about section starts -->
 <section class="about" id="about">
   <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-
   <div class="row">
     <div class="image">
-      <img draggable="false" class="tilt" src="./assets/images/about.jpg" alt="Danielle Tsemo">
+      <img draggable="false" class="tilt" src="./assets/images/about.jpg" alt="Danielle Tsemo" onerror="this.src='./assets/images/aims.jpg'">
     </div>
     <div class="content">
       <h3>I'm Danielle</h3>
       <span class="tag">Data Scientist & AI Researcher</span>
-
       <p>I am <strong>Nguemtchueng Tsemo Bibiane Danielle</strong>, a passionate Data Scientist and AI Researcher
         currently pursuing a Master's in Mathematical Sciences (Big Data) at AIMS Senegal, Mbour.
         My research spans flood forecasting with LSTM models, NLP for African languages, computer vision,
         and generative AI. I am a strong advocate for women in STEM across Africa, winner of the
         JCIA Hackathon 2025, and a recognized speaker at Deep Learning Indaba.</p>
-
       <div class="box-container">
         <div class="box">
           <p><span>Email: </span>nguemtchueng.t.danielle@aims-senegal.org</p>
@@ -98,7 +87,6 @@
           <p><span>Languages: </span>French (native), English</p>
         </div>
       </div>
-
       <div class="resumebtn">
         <a href="#" class="btn"><span>Resume</span>
           <i class="fas fa-chevron-right"></i>
@@ -109,25 +97,20 @@
 </section>
 <!-- about section ends -->
 
-
 <!-- skills section starts -->
 <section class="skills" id="skills">
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
-
   <div class="container">
     <div class="row" id="skillsContainer"></div>
   </div>
 </section>
 <!-- skills section ends -->
 
-
 <!-- education section starts -->
 <section class="education" id="education">
   <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
   <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
-
   <div class="box-container">
-
     <div class="box">
       <div class="image">
         <img draggable="false" src="./assets/images/aims.jpg" alt="AIMS Senegal">
@@ -138,7 +121,6 @@
         <h4 class="in-progress">In Progress · 2024–2025</h4>
       </div>
     </div>
-
     <div class="box">
       <div class="image">
         <img draggable="false" src="./assets/images/uy1.jpg" alt="University of Yaounde 1">
@@ -149,7 +131,6 @@
         <h4>Completed · September 2025</h4>
       </div>
     </div>
-
     <div class="box">
       <div class="image">
         <img draggable="false" src="./assets/images/uy1.jpg" alt="University of Yaounde 1">
@@ -160,7 +141,6 @@
         <h4>Completed · July 2023</h4>
       </div>
     </div>
-
     <div class="box">
       <div class="image">
         <img draggable="false" src="./assets/images/techwomen.jpg" alt="TechWomen Factory">
@@ -171,23 +151,17 @@
         <h4>April 2022 – June 2023 | 🏆 Best Student in Data Science</h4>
       </div>
     </div>
-
   </div>
 </section>
 <!-- education section ends -->
 
-
 <!-- experience section starts -->
 <section class="experience" id="experience">
   <h2 class="heading"><i class="fas fa-briefcase"></i> Work <span>Experience</span></h2>
-
   <div class="timeline">
-
     <div class="container right">
       <div class="content we-white">
-        <div class="tag">
-          <h2>HYDROAS PROJECT · Remote</h2>
-        </div>
+        <div class="tag"><h2>HYDROAS PROJECT · Remote</h2></div>
         <div class="desc">
           <h3>Researcher Internship</h3>
           <p>Nov 2023 – 2025</p>
@@ -200,12 +174,9 @@
         </div>
       </div>
     </div>
-
     <div class="container left">
       <div class="content we-white">
-        <div class="tag">
-          <h2>ENIX SARL · Yaounde, Cameroon</h2>
-        </div>
+        <div class="tag"><h2>ENIX SARL · Yaounde, Cameroon</h2></div>
         <div class="desc">
           <h3>Data Scientist Internship</h3>
           <p>December 2022 – 2023</p>
@@ -218,12 +189,9 @@
         </div>
       </div>
     </div>
-
     <div class="container right">
       <div class="content we-white">
-        <div class="tag">
-          <h2>TechWomen Factory – CAYSTI</h2>
-        </div>
+        <div class="tag"><h2>TechWomen Factory – CAYSTI</h2></div>
         <div class="desc">
           <h3>Data Scientist Training | CAYSTI Scholarship</h3>
           <p>April 2022 – June 2023</p>
@@ -236,30 +204,21 @@
         </div>
       </div>
     </div>
-
   </div>
-
   <div class="morebtn">
     <a href="#projects" class="btn"><span>View Projects</span>
       <i class="fas fa-arrow-right"></i>
     </a>
   </div>
-
 </section>
 <!-- experience section ends -->
-
-
-
-
 
 <!-- conferences section starts -->
 <section class="conferences" id="conferences">
   <h2 class="heading"><i class="fas fa-certificate"></i> Conferences & <span>Certifications</span></h2>
-
   <div class="cert-slider-wrapper">
     <button class="cert-arrow cert-prev conf-prev"><i class="fas fa-chevron-left"></i></button>
     <div class="cert-slider conf-slider">
-
       <div class="cert-slide active">
         <div class="cert-card conf-card">
           <div class="cert-deco deco1"></div>
@@ -274,7 +233,6 @@
           </div>
         </div>
       </div>
-
       <div class="cert-slide">
         <div class="cert-card conf-card">
           <div class="cert-deco deco1"></div>
@@ -289,7 +247,6 @@
           </div>
         </div>
       </div>
-
       <div class="cert-slide">
         <div class="cert-card conf-card">
           <div class="cert-deco deco1"></div>
@@ -304,7 +261,6 @@
           </div>
         </div>
       </div>
-
       <div class="cert-slide">
         <div class="cert-card conf-card">
           <div class="cert-deco deco1"></div>
@@ -319,7 +275,6 @@
           </div>
         </div>
       </div>
-
       <div class="cert-slide">
         <div class="cert-card conf-card">
           <div class="cert-deco deco1"></div>
@@ -334,11 +289,9 @@
           </div>
         </div>
       </div>
-
     </div>
     <button class="cert-arrow cert-next conf-next"><i class="fas fa-chevron-right"></i></button>
   </div>
-
   <div class="cert-dots conf-dots">
     <span class="cert-dot active" data-index="0"></span>
     <span class="cert-dot" data-index="1"></span>
@@ -352,13 +305,10 @@
 </section>
 <!-- conferences section ends -->
 
-
 <!-- projects section starts -->
 <section class="work" id="projects">
   <h2 class="heading"><i class="fas fa-project-diagram"></i> Research <span>Projects</span></h2>
-
   <div class="jigar-projects">
-
     <div class="jp-card">
       <div class="jp-img-wrap">
         <img src="./assets/images/aims.jpg" alt="Flood Prediction">
@@ -372,7 +322,6 @@
         <p><span>Tech Stack:</span> Python, LSTM, TensorFlow, Pandas, Matplotlib</p>
       </div>
     </div>
-
     <div class="jp-card">
       <div class="jp-img-wrap">
         <img src="./assets/images/uy1.jpg" alt="Malaria Prediction">
@@ -386,7 +335,6 @@
         <p><span>Tech Stack:</span> Python, PDEs, Neural Networks, Scikit-learn, NumPy</p>
       </div>
     </div>
-
     <div class="jp-card">
       <div class="jp-img-wrap">
         <img src="./assets/images/techwomen.jpg" alt="NLP Next Word">
@@ -400,7 +348,6 @@
         <p><span>Tech Stack:</span> Python, RNN, LSTM, Transformers, PyTorch</p>
       </div>
     </div>
-
     <div class="jp-card">
       <div class="jp-img-wrap">
         <img src="./assets/images/aims.jpg" alt="Handwriting Recognition">
@@ -414,7 +361,6 @@
         <p><span>Tech Stack:</span> Python, SIFT, KNN, OpenCV, Scikit-learn</p>
       </div>
     </div>
-
     <div class="jp-card">
       <div class="jp-img-wrap">
         <img src="./assets/images/uy1.jpg" alt="Music App">
@@ -428,7 +374,6 @@
         <p><span>Tech Stack:</span> Python, Flask, JavaScript, ML, Collaborative Filtering</p>
       </div>
     </div>
-
     <div class="jp-card">
       <div class="jp-img-wrap">
         <img src="./assets/images/techwomen.jpg" alt="NLP Translation">
@@ -442,8 +387,6 @@
         <p><span>Tech Stack:</span> Python, NLP, Speech Recognition, Translation APIs</p>
       </div>
     </div>
-
-
     <div class="jp-card">
       <div class="jp-img-wrap">
         <img src="./assets/images/aims.jpg" alt="JCIA Hackathon">
@@ -458,7 +401,6 @@
         <p><span>Tech Stack:</span> Python, Computer Vision, Deep Learning, African Plums Dataset</p>
       </div>
     </div>
-
     <div class="jp-card">
       <div class="jp-img-wrap">
         <img src="./assets/images/techwomen.jpg" alt="Best Student">
@@ -472,7 +414,6 @@
         <p><span>Program:</span> CAYSTI &amp; CUSO International · Global Affairs Canada</p>
       </div>
     </div>
-
   </div>
   <div class="view-all-wrap">
     <a href="https://github.com/danielletsemo" target="_blank" class="view-all-btn">View All <i class="fas fa-arrow-right"></i></a>
@@ -480,13 +421,9 @@
 </section>
 <!-- projects section ends -->
 
-
-
-
 <!-- contact section starts -->
 <section class="contact" id="contact">
   <h2 class="heading"><i class="fas fa-headset"></i> Get In <span>Touch</span></h2>
-
   <div class="container">
     <div class="content">
       <div class="image-box">
@@ -520,37 +457,39 @@
 </section>
 <!-- contact section ends -->
 
-
 <!-- footer section starts -->
 <section class="footer">
-  <div class="footer-clean">
-    <div class="footer-clean-social">
-      <a href="https://www.linkedin.com/in/danielle-tsemo" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/danielletsemo" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="mailto:nguemtchueng.t.danielle@aims-senegal.org"><i class="fas fa-envelope"></i></a>
-      <a href="https://twitter.com/danielletsemo" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://t.me/danielletsemo" target="_blank"><i class="fab fa-telegram"></i></a>
+  <div class="footer-mini">
+    <div class="footer-mini-brand">
+      <i class="fas fa-code"></i>
+      <span>Danielle Tsemo</span>
+      <p>Data Scientist &amp; AI Researcher · Mbour, Senegal</p>
     </div>
-    <p class="footer-copyright">© 2025 Danielle Tsemo · All rights reserved</p>
-    <p class="footer-credit">Designed with <i class="fa fa-heart"></i> by <a href="https://github.com/danielletsemo">Danielle Tsemo</a></p>
+    <div class="footer-mini-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-mini-social">
+      <a href="https://www.linkedin.com/in/danielle-tsemo" class="fab fa-linkedin" target="_blank"></a>
+      <a href="https://github.com/danielletsemo" class="fab fa-github" target="_blank"></a>
+      <a href="mailto:nguemtchueng.t.danielle@aims-senegal.org" class="fas fa-envelope"></a>
+    </div>
   </div>
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://github.com/danielletsemo">Danielle Tsemo</a></h1>
 </section>
 <!-- footer section ends -->
 
-
-<!-- scroll top btn -->
 <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
 
-
-<!-- CDNs -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
 <script src="./assets/js/particles.min.js"></script>
 <script src="./assets/js/app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
-
 <script src="./assets/js/script.js"></script>
-
 </body>
 </html>

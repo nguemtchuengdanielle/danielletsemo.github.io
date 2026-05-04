@@ -1175,3 +1175,53 @@ form .button-area { display: flex; float: right; flex-direction: row-reverse; }
 }
 .button-area button:hover,
 .contact .button-area button:hover { background: #1d4ed8 !important; }
+
+/* ── Lang switcher repositioned ── */
+.navbar ul { display: flex; align-items: center; }
+.lang-switcher { margin-left: 2.5rem; }
+.lang-globe {
+  background: none; border: 1.5px solid #2563eb;
+  border-radius: 2rem; cursor: pointer;
+  font-size: 1.3rem; font-weight: 700;
+  color: #2563eb; font-family: "Poppins", sans-serif;
+  padding: 0.4rem 1.2rem;
+  display: flex; align-items: center; gap: 0.4rem;
+  transition: 0.2s;
+}
+.lang-globe:hover { background: #2563eb; color: #fff; }
+
+/* ── Twitter + Telegram social colors ── */
+.social-icons a.twitter:hover { background-color: #1da1f2; }
+.social-icons a.telegram:hover { background-color: #0088cc; }
+
+/* ── Hero text bigger (like Jigar) ── */
+.home .content h2 { font-size: 6rem; font-weight: 800; }
+.home .content h2 span { font-size: 6rem; }
+.home .content p { font-size: 2.8rem; }
+
+/* ── Footer clean minimal ── */
+.footer { min-height: auto; padding: 2rem 9%; background: rgb(0,1,43); }
+.footer-clean {
+  display: flex; flex-direction: column;
+  align-items: center; gap: 1.2rem;
+  padding: 1.5rem 0;
+}
+.footer-clean-social { display: flex; gap: 1.5rem; }
+.footer-clean-social a {
+  width: 4rem; height: 4rem;
+  background: rgba(255,255,255,0.1);
+  color: #fff; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.7rem; transition: 0.2s;
+}
+.footer-clean-social a:hover { background: #2563eb; }
+.footer-copyright {
+  color: #aaa; font-size: 1.3rem;
+  text-transform: none; text-align: center;
+}
+.footer-credit {
+  color: #666; font-size: 1.2rem;
+  text-transform: none; text-align: center;
+}
+.footer-credit a { color: #2563eb; }
+.footer-credit i { color: #e90606; }

@@ -236,6 +236,29 @@ makeSlider('#certifications .cert-slider', '#certifications .cert-prev', '#certi
 // Conferences slider
 makeSlider('#conferences .conf-slider', '#conferences .conf-prev', '#conferences .conf-next', '#conferences .conf-dots', 3500);
 
+// Globe language toggle
+var currentLang = 'en';
+function toggleLang() {
+  currentLang = currentLang === 'en' ? 'fr' : 'en';
+  document.getElementById('langLabel').textContent = currentLang === 'en' ? 'EN' : 'FR';
+  var t = {
+    en: ['Home','About','Skills','Education','Experience','Projects','Contact'],
+    fr: ['Accueil','À propos','Compétences','Formation','Expérience','Projets','Contact']
+  };
+  var links = document.querySelectorAll('.navbar ul li a');
+  t[currentLang].forEach(function(text, i){ if(links[i]) links[i].textContent = text; });
+}
+
+// Hide Tawk.to default greeting popup
+window.addEventListener('load', function(){
+  if(window.Tawk_API){
+    Tawk_API.onLoad = function(){
+      Tawk_API.hideWidget();
+      setTimeout(function(){ Tawk_API.showWidget(); }, 100);
+    };
+  }
+});
+
 // Start of Tawk.to Live Chat
 var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
 (function () {
@@ -247,30 +270,3 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     s0.parentNode.insertBefore(s1, s0);
 })();
 // End of Tawk.to Live Chat
-
-// Language switcher
-var translations = {
-  en: {
-    home: "Home", about: "About", skills: "Skills",
-    education: "Education", experience: "Experience",
-    projects: "Projects", contact: "Contact",
-    heroText: "I'm Danielle", heroSub: "I am into",
-    aboutMe: "About Me", resume: "Resume"
-  },
-  fr: {
-    home: "Accueil", about: "À propos", skills: "Compétences",
-    education: "Formation", experience: "Expérience",
-    projects: "Projets", contact: "Contact",
-    heroText: "Je suis Danielle", heroSub: "Je travaille en",
-    aboutMe: "À propos", resume: "CV"
-  }
-};
-
-function setLang(lang) {
-  document.querySelectorAll('.lang-btn').forEach(function(btn) {
-    btn.classList.remove('active');
-  });
-  event.target.classList.add('active');
-  // Store preference
-  localStorage.setItem('lang', lang);
-}

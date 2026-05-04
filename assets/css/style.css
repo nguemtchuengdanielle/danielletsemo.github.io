@@ -92,9 +92,9 @@ header .navbar ul li a:hover { color: #0318a9; border-bottom: 0.2rem solid #0318
   content: ""; position: absolute; top: 0; left: 0; height: 100%; width: 100%;
 }
 .home .content { flex: 1 1 45rem; padding-top: 0; z-index: 1; }
-.home .image { flex: 0 0 45rem; z-index: 1; display: flex; justify-content: center; align-items: center; }
+.home .image { flex: 0 0 40rem; z-index: 1; display: flex; justify-content: center; align-items: center; }
 .home .image img {
-  width: 80%; max-width: 38rem; border-radius: 50%;
+  width: 60%; max-width: 28rem; border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3); cursor: pointer;
 }
 .home .image img:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
@@ -1092,20 +1092,15 @@ form .button-area { display: flex; float: right; flex-direction: row-reverse; }
 }
 
 /* ── FOOTER MINI ── */
-.footer { min-height: auto; padding: 2.5rem 9% 0; background: rgb(0,1,43); }
+.footer { min-height: auto; padding: 1.5rem 9% 0; background: rgb(0,1,43); }
 .footer-mini {
   display: flex; flex-wrap: wrap;
-  align-items: center; justify-content: space-between;
-  padding-bottom: 2rem; gap: 2rem;
+  align-items: center; justify-content: center;
+  padding-bottom: 1.2rem; gap: 1.5rem;
   border-bottom: 0.5px solid rgba(255,255,255,0.1);
 }
-.footer-mini-brand { flex: 1 1 25rem; }
-.footer-mini-brand i { color: #730397; font-size: 2rem; margin-right: 0.5rem; }
-.footer-mini-brand span { color: #fff; font-size: 1.8rem; font-weight: 700; }
-.footer-mini-brand p { color: #aaa; font-size: 1.3rem; text-transform: none; margin-top: 0.4rem; }
-.footer-mini-links { display: flex; gap: 2rem; flex-wrap: wrap; }
-.footer-mini-links a { color: #bbb; font-size: 1.4rem; transition: 0.2s; }
-.footer-mini-links a:hover { color: #730397; }
+.footer-mini-brand { display: none; }
+.footer-mini-links { display: none; }
 .footer-mini-social { display: flex; gap: 1.2rem; }
 .footer-mini-social a {
   width: 3.8rem; height: 3.8rem;
@@ -1114,7 +1109,7 @@ form .button-area { display: flex; float: right; flex-direction: row-reverse; }
   display: flex; align-items: center; justify-content: center;
   font-size: 1.6rem; transition: 0.2s;
 }
-.footer-mini-social a:hover { background: #730397; }
+.footer-mini-social a:hover { background: #0318a9; }
 
 /* ── Award badge in project cards ── */
 .jp-award-badge {

@@ -1184,3 +1184,34 @@ form .button-area {
 /* ── Bootstrap integration overrides ── */
 .skills-bs-container { max-width: 100% !important; padding: 0 !important; }
 .jp-badge.badge { font-size: 1.2rem; background-color: #0318a9 !important; }
+
+/* Fix Bootstrap underlines on navbar links */
+header .navbar ul li a,
+header .navbar ul li a:hover,
+header .navbar ul li a.active,
+header .logo,
+.footer a,
+.contact-detail a,
+.contact-socials a { text-decoration: none !important; }
+
+/* Fix Bootstrap blue background on contact-left */
+.contact-left { background: #0318a9 !important; }
+
+/* Fix Send button width — not full width */
+.button-area button {
+  width: auto !important;
+  min-width: 16rem;
+}
+
+/* Mobile — lang switcher visible in navbar */
+@media (max-width: 768px) {
+  .lang-switcher {
+    display: flex !important;
+    justify-content: center;
+    margin: 1rem auto 0;
+  }
+  .lang-globe {
+    font-size: 1.4rem;
+    padding: 0.4rem 1.2rem;
+  }
+}

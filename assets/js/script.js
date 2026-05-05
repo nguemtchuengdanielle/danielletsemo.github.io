@@ -188,8 +188,8 @@ srtop.reveal('.conf-box', { interval: 200 });
 srtop.reveal('.jp-card', { interval: 150 });
 
 /* CONTACT */
-srtop.reveal('.contact-left', { delay: 200, origin: 'left' });
-srtop.reveal('.contact-right', { delay: 400, origin: 'right' });
+srtop.reveal('.contact-left', { delay: 200 });
+srtop.reveal('.contact-right', { delay: 400 });
 
 /* CERTIFICATIONS */
 srtop.reveal('.cert-slider-wrapper', { delay: 300 });

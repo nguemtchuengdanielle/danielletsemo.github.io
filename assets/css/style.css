@@ -205,7 +205,8 @@ header .navbar ul li a:hover { color: #0318a9; border-bottom: 0.2rem solid #0318
   display: flex; flex-direction: column;
   align-items: center; gap: 1rem; margin-top: 1rem;
 }
-.skills .container .bar .info img { width: 48px; height: 48px; }
+.skills .container .bar .info img { width: 48px; height: 48px; border-radius: 6px; }
+.skills .container .bar .info img[alt="GitHub"] { background: #1a1a2e; border-radius: 8px; padding: 3px; }
 .skills .container .bar .info span {
   font-size: 1.6rem; font-weight: 500;
   font-family: "Poppins"; margin-left: 0.5rem; text-align: center; color: #0e2431;
@@ -438,8 +439,24 @@ header .navbar ul li a:hover { color: #0318a9; border-bottom: 0.2rem solid #0318
   display: flex; align-items: center;
   justify-content: space-between; padding: 2.5rem 2rem;
 }
-.contact .content .image-box { max-width: 60%; margin-left: 4rem; }
-.contact .content .image-box img { width: 100%; height: 40rem; position: relative; }
+.contact .content .image-box {
+  flex: 0 0 32rem;
+  margin-left: 2rem;
+  position: relative;
+}
+.contact .content .image-box img {
+  width: 100%; height: 42rem;
+  object-fit: cover; object-position: center top;
+  border-radius: 2rem 6rem 2rem 6rem;
+  display: block;
+  box-shadow: 0 20px 50px rgba(3,24,169,0.18), 0 4px 15px rgba(0,0,0,0.12);
+  transform: rotate(-2deg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.contact .content .image-box img:hover {
+  transform: rotate(0deg) scale(1.02);
+  box-shadow: 0 25px 60px rgba(3,24,169,0.25), 0 8px 20px rgba(0,0,0,0.15);
+}
 .contact .content form { width: 45%; margin-right: 3.5rem; }
 form .form-group { display: flex; flex-direction: column; justify-content: center; }
 .form-group .field { height: 50px; display: flex; position: relative; margin: 1rem; width: 100%; }
@@ -1042,8 +1059,7 @@ form .button-area { display: flex; float: right; flex-direction: row-reverse; }
   display: flex; align-items: center;
   justify-content: space-between; padding: 2.5rem 2rem;
 }
-.contact .content .image-box { max-width: 50%; margin-left: 2rem; }
-.contact .content .image-box img { width: 100%; }
+.contact .content form { width: 55%; margin-right: 2.5rem; }
 .contact .content form { width: 45%; margin-right: 3.5rem; }
 .contact .content .form-group { display: flex; flex-direction: column; }
 .contact .content .field {

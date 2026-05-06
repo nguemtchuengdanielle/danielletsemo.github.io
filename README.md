@@ -1,3 +1,8 @@
+// git add .
+//git commit -m "Update README with latest projects and achievements"
+//git push origin main
+
+
 # Data Science & AI Research Portfolio - Danielle Tsemo
 
 This portfolio is a compilation of all the Data Science and AI Research projects I have done for academic, research, and self-learning purposes. It also contains my achievements, skills, certifications, and conference presentations. It is updated on a regular basis.
